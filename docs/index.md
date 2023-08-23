@@ -1,2 +1,0 @@
-# DUDE
-## Time is now
