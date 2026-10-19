@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The Minimum Demo</title>
+<meta name="description" content="How to draw a capstone project for the proposal: the pretext, the process flow, a solid box around the first slice, and dashed boxes around the full project.">
+<link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+<div class="masthead"><div class="wrap"><a class="course" href="../">CIDM 6395 · MS-CISBA Capstone</a><span class="inst">West Texas A&amp;M University · Paul and Virginia Engler College of Business</span></div></div>
+<div class="wrap">
+<nav class="top"><a href="../">Home</a><a href="../#figures" aria-current="page">Figures</a><a href="../#guides">Guides</a><a href="../#protocol">Protocol</a></nav>
+<header>
+<div class="eyebrow">Figure 03 · Drawing your project</div>
+<h1>The Minimum Demo</h1>
+<p class="lede">The proposal includes your own drawing of the project. The drawing has four parts, added in order: the pretext, the process flow, a solid box around the first slice, and dashed boxes around what the full project adds. This figure builds one drawing step by step, then gives the blank form.</p>
+</header>
+<div class="figwrap">
+<div class="scroller">
+<svg class="fig" viewBox="0 0 1230 580" role="img" aria-labelledby="figtitle">
+<title id="figtitle">The mortgage-complaints example drawn in the proposal form: pretext, process flow, a solid box around the first slice, and dashed boxes around the full project.</title>
+<defs>
+<marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="var(--thunderstorm)"/></marker>
+</defs>
+<g id="pretext">
+<text x="615" y="40" text-anchor="middle" font-size="17" font-style="italic">Pretext: a state banking regulator wants to know which mortgage lenders draw</text>
+<text x="615" y="62" text-anchor="middle" font-size="17" font-style="italic">complaints out of proportion to the loans they make.</text>
+</g>
+<g id="flow" class="hid">
+<g font-size="15">
+<rect x="15" y="160" width="150" height="120" rx="8" fill="var(--caliche)" stroke="var(--thunderstorm)" stroke-width="2"/>
+<text x="90" y="195" text-anchor="middle" font-size="19" font-weight="600">Sources</text><text x="90" y="228" text-anchor="middle">CFPB complaints</text><text x="90" y="252" text-anchor="middle">HMDA loans</text>
+<rect x="225" y="160" width="150" height="120" rx="8" fill="var(--ss)" fill-opacity="0.16" stroke="var(--ss)" stroke-width="3"/>
+<text x="300" y="195" text-anchor="middle" font-size="19" font-weight="600">SS · ingest</text><text x="300" y="228" text-anchor="middle">API pull</text><text x="300" y="252" text-anchor="middle">file load</text>
+<rect x="435" y="160" width="150" height="120" rx="8" fill="var(--dm)" fill-opacity="0.16" stroke="var(--dm)" stroke-width="3"/>
+<text x="510" y="195" text-anchor="middle" font-size="19" font-weight="600">DM · store</text><text x="510" y="228" text-anchor="middle">one schema</text><text x="510" y="252" text-anchor="middle">name to lender ID</text>
+<rect x="645" y="160" width="150" height="120" rx="8" fill="var(--ba)" fill-opacity="0.16" stroke="var(--ba)" stroke-width="3"/>
+<text x="720" y="195" text-anchor="middle" font-size="19" font-weight="600">BA · analyze</text><text x="720" y="228" text-anchor="middle">rate per lender</text><text x="720" y="252" text-anchor="middle">flag vs. state</text>
+<rect x="855" y="160" width="150" height="120" rx="8" fill="var(--ss)" fill-opacity="0.16" stroke="var(--ss)" stroke-width="3"/>
+<text x="930" y="195" text-anchor="middle" font-size="19" font-weight="600">SS · deliver</text><text x="930" y="228" text-anchor="middle">Streamlit view</text><text x="930" y="252" text-anchor="middle">for the examiner</text>
+<rect x="1065" y="160" width="150" height="120" rx="8" fill="var(--caliche)" stroke="var(--thunderstorm)" stroke-width="2"/>
+<text x="1140" y="195" text-anchor="middle" font-size="19" font-weight="600">Examiner</text><text x="1140" y="228" text-anchor="middle">chooses lenders</text><text x="1140" y="252" text-anchor="middle">to review first</text>
+</g>
+<g stroke="var(--thunderstorm)" stroke-width="2.5" marker-end="url(#arr)">
+<line x1="167" y1="220" x2="222" y2="220"/><line x1="377" y1="220" x2="432" y2="220"/><line x1="587" y1="220" x2="642" y2="220"/><line x1="797" y1="220" x2="852" y2="220"/><line x1="1007" y1="220" x2="1062" y2="220"/>
+</g>
+<rect x="225" y="300" width="780" height="70" rx="8" fill="var(--cn)" fill-opacity="0.12" stroke="var(--cn)" stroke-width="3"/>
+<text x="615" y="330" text-anchor="middle" font-size="18" font-weight="600">CN · controls along the flow</text>
+<text x="615" y="355" text-anchor="middle" font-size="15">credentials out of the repository · file hashes · consent rule on narratives</text>
+</g>
+<g id="slice" class="hid">
+<rect x="205" y="115" width="820" height="270" rx="14" fill="none" stroke="var(--maroon)" stroke-width="4"/>
+<text x="225" y="143" font-size="17" font-weight="700" style="fill:var(--maroon)">FIRST SLICE · one state · mortgages only · one year of HMDA data</text>
+</g>
+<g id="full" class="hid">
+<g stroke="var(--thunderstorm)" stroke-width="2" stroke-dasharray="8 6" fill="none">
+<rect x="225" y="420" width="150" height="110" rx="8"/><rect x="645" y="420" width="150" height="110" rx="8"/><rect x="855" y="420" width="150" height="110" rx="8"/>
+</g>
+<g font-size="15" text-anchor="middle">
+<text x="300" y="452" font-size="17" font-weight="600">SS · ingest</text><text x="300" y="480">all states and</text><text x="300" y="500">all products</text>
+<text x="720" y="452" font-size="17" font-weight="600">BA · trends</text><text x="720" y="480">rates tracked</text><text x="720" y="500">over time</text>
+<text x="930" y="452" font-size="17" font-weight="600">SS · alerts</text><text x="930" y="480">when a lender's</text><text x="930" y="500">rate changes</text>
+</g>
+<rect x="190" y="100" width="850" height="455" rx="18" fill="none" stroke="var(--maroon)" stroke-width="2.5" stroke-dasharray="12 8"/>
+<text x="1030" y="540" text-anchor="end" font-size="15" font-weight="700" style="fill:var(--maroon)">FULL PROJECT · about one year</text>
+</g>
+</svg>
+</div>
+<div class="caption"><p class="k" id="capk"></p><p id="capp"></p></div>
+<div class="ctrl">
+<button id="back">Back</button>
+<div class="dots" id="dots" role="tablist"></div>
+<button id="next">Next</button>
+</div>
+</div>
+<h2>The blank form</h2>
+<p>Draw your own project in this form. Replace each box with an area code (BA, DM, SS, or CN) in the order the areas act, and add or remove boxes to fit your flow. Commit the drawing as <code>proposal/diagram.png</code> or <code>proposal/diagram.svg</code>. Any drawing tool is acceptable, and so is a clear photograph of a hand drawing.</p>
+<div class="figwrap">
+<div class="scroller">
+<svg class="fig" viewBox="0 0 1230 470" role="img" aria-labelledby="blanktitle">
+<title id="blanktitle">A blank proposal diagram: a pretext line, five empty boxes joined by arrows, a solid box around the first three, and dashed boxes around the rest.</title>
+<defs>
+<marker id="arr2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="var(--thunderstorm)"/></marker>
+</defs>
+<text x="60" y="50" font-size="18" font-style="italic">Pretext: who has the problem, and what decision or operation the project supports</text>
+<line x1="60" y1="66" x2="1170" y2="66" stroke="var(--line)" stroke-width="2"/>
+<g fill="var(--white)" stroke="var(--thunderstorm)" stroke-width="2">
+<rect x="70" y="170" width="160" height="120" rx="8"/><rect x="290" y="170" width="160" height="120" rx="8"/><rect x="510" y="170" width="160" height="120" rx="8"/>
+</g>
+<g fill="none" stroke="var(--thunderstorm)" stroke-width="2" stroke-dasharray="8 6">
+<rect x="770" y="170" width="160" height="120" rx="8"/><rect x="990" y="170" width="160" height="120" rx="8"/>
+</g>
+<g font-size="16" text-anchor="middle" style="fill:var(--thunderstorm)">
+<text x="150" y="225" style="fill:var(--thunderstorm)">area code</text><text x="150" y="250" style="fill:var(--thunderstorm)">what it does</text>
+<text x="370" y="225" style="fill:var(--thunderstorm)">area code</text><text x="370" y="250" style="fill:var(--thunderstorm)">what it does</text>
+<text x="590" y="225" style="fill:var(--thunderstorm)">area code</text><text x="590" y="250" style="fill:var(--thunderstorm)">what it does</text>
+<text x="850" y="225" style="fill:var(--thunderstorm)">area code</text><text x="850" y="250" style="fill:var(--thunderstorm)">what it adds</text>
+<text x="1070" y="225" style="fill:var(--thunderstorm)">area code</text><text x="1070" y="250" style="fill:var(--thunderstorm)">what it adds</text>
+</g>
+<g stroke="var(--thunderstorm)" stroke-width="2.5" marker-end="url(#arr2)">
+<line x1="232" y1="230" x2="287" y2="230"/><line x1="452" y1="230" x2="507" y2="230"/><line x1="672" y1="230" x2="767" y2="230" stroke-dasharray="6 5"/><line x1="932" y1="230" x2="987" y2="230" stroke-dasharray="6 5"/>
+</g>
+<rect x="45" y="120" width="650" height="200" rx="14" fill="none" stroke="var(--maroon)" stroke-width="4"/>
+<text x="65" y="148" font-size="16" font-weight="700" style="fill:var(--maroon)">FIRST SLICE · includes SS and at least two other areas</text>
+<rect x="30" y="100" width="1170" height="250" rx="18" fill="none" stroke="var(--maroon)" stroke-width="2.5" stroke-dasharray="12 8"/>
+<text x="1185" y="330" text-anchor="end" font-size="15" font-weight="700" style="fill:var(--maroon)">FULL PROJECT</text>
+<text x="60" y="400" font-size="16">Solid box: what runs at the end of the term. Dashed boxes: what the full project adds over about one year.</text>
+<text x="60" y="428" font-size="16">An area can appear more than once. CN can be a box in the flow or a band under it.</text>
+</svg>
+</div>
+</div>
+<h2>Reading the figure</h2>
+<p>The solid box is a promise. At the end of the term a reviewer starts the prototype from its README and checks that everything inside the box runs on real data. The box must contain SS, because the prototype must function, and at least two of the other three areas. It must also contain one complete path, from the source data to an output a user sees. A slice that builds every box halfway has no such path.</p>
+<p>The dashed boxes are a forecast. They do not run this term. The synthesis paper and the presentation explain them, and they show that the first slice is a sample of a larger project, not a separate small one. The three views of the same project are in <a href="three-views.html">Figure 02</a>, and the space the project occupies is in <a href="interaction-space.html">Figure 01</a>.</p>
+<footer>Dr. Jeffry Babb · Paul and Virginia Engler College of Business · West Texas A&amp;M University · CIDM 6395 · Fall 2026</footer>
+</div>
+<script>
+const steps=[
+ {k:"Start with the pretext",p:"Write one line above the drawing: who has the problem, and what decision or operation the project supports. Here a state banking regulator wants to know which mortgage lenders draw complaints out of proportion to the loans they make. The pretext belongs to the user, not to the course."},
+ {k:"Draw the process flow",p:"Draw a box for each area in the order it acts, joined by arrows. SS loads the data, DM stores and matches it, BA computes and flags the rates, and SS delivers the result to the examiner. CN acts along the whole flow, so it is drawn as a band under the boxes. An area can appear more than once."},
+ {k:"Put a solid box around the first slice",p:"The solid box encloses what will run at the end of the term. Here it is the whole flow, narrowed to one state, mortgages only, and one year of loan data. The box contains SS and at least two other areas, and one complete path from the sources to the examiner."},
+ {k:"Put dashed boxes around the full project",p:"The dashed boxes show what about one year of further work adds: ingestion for all states and products, rates tracked over time, and alerts when a lender's rate changes. Each dashed box extends a box in the first slice. Nothing dashed runs this term."}
+];
+const groups=["flow","slice","full"];
+let i=0;
+const capk=document.getElementById("capk"),capp=document.getElementById("capp"),dots=document.getElementById("dots");
+steps.forEach((s,n)=>{const b=document.createElement("button");b.setAttribute("role","tab");b.setAttribute("aria-label","Step "+(n+1));b.onclick=()=>go(n);dots.appendChild(b);});
+function go(n){i=Math.max(0,Math.min(steps.length-1,n));
+ groups.forEach((g,k)=>{const el=document.getElementById(g);el.classList.toggle("shown",i>=k+1);el.classList.toggle("hid",i<k+1);});
+ capk.textContent=(i+1)+". "+steps[i].k; capp.textContent=steps[i].p;
+ [...dots.children].forEach((d,k)=>k===i?d.setAttribute("aria-current","step"):d.removeAttribute("aria-current"));
+ document.getElementById("back").disabled=i===0; document.getElementById("next").disabled=i===steps.length-1;}
+document.getElementById("back").onclick=()=>go(i-1);document.getElementById("next").onclick=()=>go(i+1);
+document.addEventListener("keydown",e=>{if(e.key==="ArrowRight")go(i+1);if(e.key==="ArrowLeft")go(i-1);});
+go(0);
+</script>
+</body>
+</html>

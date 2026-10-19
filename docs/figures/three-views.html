@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Three Views of One Project</title>
+<meta name="description" content="One capstone project drawn three ways: as a chain, a stack, and a hub. Each view answers a different question about the same design.">
+<link rel="stylesheet" href="../assets/site.css">
+<style>
+.views{display:flex;gap:8px;flex-wrap:wrap}
+.views button[aria-selected="true"]{background:var(--maroon);color:var(--white)}
+.fig .view{display:none}
+.fig .view.on{display:inline}
+</style>
+</head>
+<body>
+<div class="masthead"><div class="wrap"><a class="course" href="../">CIDM 6395 · MS-CISBA Capstone</a><span class="inst">West Texas A&amp;M University · Paul and Virginia Engler College of Business</span></div></div>
+<div class="wrap">
+<nav class="top"><a href="../">Home</a><a href="../#figures" aria-current="page">Figures</a><a href="../#guides">Guides</a><a href="../#protocol">Protocol</a></nav>
+<header>
+<div class="eyebrow">Figure 02 · Three views of one project</div>
+<h1>Three Views of One Project</h1>
+<p class="lede">One project drawn three ways. The chain shows the order in which the areas act. The stack shows what depends on what. The hub shows what each area contributes to the decision the project supports. The project is the same in all three; only the question changes.</p>
+</header>
+<div class="figwrap">
+<div class="scroller">
+<svg class="fig" viewBox="0 0 1230 580" role="img" aria-labelledby="figtitle">
+<title id="figtitle">The mortgage-complaints example project drawn as a chain, a stack, or a hub, depending on the view selected.</title>
+<defs>
+<marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="var(--thunderstorm)"/></marker>
+</defs>
+<text x="615" y="44" text-anchor="middle" font-size="17" font-style="italic">Pretext: a state banking regulator wants to know which mortgage lenders draw</text>
+<text x="615" y="66" text-anchor="middle" font-size="17" font-style="italic">complaints out of proportion to the loans they make.</text>
+
+<g id="chain" class="view">
+<g font-size="15">
+<rect x="15" y="150" width="150" height="150" rx="8" fill="var(--caliche)" stroke="var(--thunderstorm)" stroke-width="2"/>
+<text x="90" y="190" text-anchor="middle" font-size="19" font-weight="600">Sources</text><text x="90" y="225" text-anchor="middle">CFPB complaints</text><text x="90" y="245" text-anchor="middle">API</text><text x="90" y="270" text-anchor="middle">HMDA loan file</text>
+<rect x="225" y="150" width="150" height="150" rx="8" fill="var(--ss)" fill-opacity="0.16" stroke="var(--ss)" stroke-width="3"/>
+<text x="300" y="190" text-anchor="middle" font-size="19" font-weight="600">SS · ingest</text><text x="300" y="225" text-anchor="middle">daily API pull</text><text x="300" y="250" text-anchor="middle">annual file load</text>
+<rect x="435" y="150" width="150" height="150" rx="8" fill="var(--dm)" fill-opacity="0.16" stroke="var(--dm)" stroke-width="3"/>
+<text x="510" y="190" text-anchor="middle" font-size="19" font-weight="600">DM · store</text><text x="510" y="225" text-anchor="middle">one schema</text><text x="510" y="250" text-anchor="middle">company name</text><text x="510" y="270" text-anchor="middle">to lender ID</text>
+<rect x="645" y="150" width="150" height="150" rx="8" fill="var(--ba)" fill-opacity="0.16" stroke="var(--ba)" stroke-width="3"/>
+<text x="720" y="190" text-anchor="middle" font-size="19" font-weight="600">BA · analyze</text><text x="720" y="225" text-anchor="middle">complaints per</text><text x="720" y="245" text-anchor="middle">1,000 loans</text><text x="720" y="270" text-anchor="middle">flag vs. state rate</text>
+<rect x="855" y="150" width="150" height="150" rx="8" fill="var(--ss)" fill-opacity="0.16" stroke="var(--ss)" stroke-width="3"/>
+<text x="930" y="190" text-anchor="middle" font-size="19" font-weight="600">SS · deliver</text><text x="930" y="225" text-anchor="middle">Streamlit view</text><text x="930" y="250" text-anchor="middle">rate, state rate,</text><text x="930" y="270" text-anchor="middle">and flag</text>
+<rect x="1065" y="150" width="150" height="150" rx="8" fill="var(--caliche)" stroke="var(--thunderstorm)" stroke-width="2"/>
+<text x="1140" y="190" text-anchor="middle" font-size="19" font-weight="600">Examiner</text><text x="1140" y="225" text-anchor="middle">chooses which</text><text x="1140" y="245" text-anchor="middle">lenders to</text><text x="1140" y="265" text-anchor="middle">review first</text>
+</g>
+<g stroke="var(--thunderstorm)" stroke-width="2.5" marker-end="url(#arr)">
+<line x1="167" y1="225" x2="222" y2="225"/><line x1="377" y1="225" x2="432" y2="225"/><line x1="587" y1="225" x2="642" y2="225"/><line x1="797" y1="225" x2="852" y2="225"/><line x1="1007" y1="225" x2="1062" y2="225"/>
+</g>
+<g font-size="14" fill="var(--thunderstorm)" text-anchor="middle">
+<text x="405" y="322" style="fill:var(--thunderstorm)">persistence</text><text x="405" y="339" style="fill:var(--thunderstorm)">layer</text>
+<text x="615" y="322" style="fill:var(--thunderstorm)">data</text><text x="615" y="339" style="fill:var(--thunderstorm)">pipeline</text>
+<text x="825" y="322" style="fill:var(--thunderstorm)">decision</text><text x="825" y="339" style="fill:var(--thunderstorm)">delivery</text>
+</g>
+<g stroke="var(--cn)" stroke-width="2" stroke-dasharray="4 4">
+<line x1="300" y1="300" x2="300" y2="390"/><line x1="510" y1="300" x2="510" y2="390"/><line x1="720" y1="300" x2="720" y2="390"/><line x1="930" y1="300" x2="930" y2="390"/>
+</g>
+<rect x="225" y="390" width="780" height="100" rx="8" fill="var(--cn)" fill-opacity="0.12" stroke="var(--cn)" stroke-width="3"/>
+<text x="615" y="428" text-anchor="middle" font-size="19" font-weight="600">CN · controls along the whole flow</text>
+<text x="615" y="460" text-anchor="middle" font-size="15">credentials kept out of the repository · a hash logged for each file received</text>
+<text x="615" y="480" text-anchor="middle" font-size="15">· a narrative shown only where the consumer consented</text>
+</g>
+
+<g id="stack" class="view">
+<rect x="260" y="95" width="820" height="60" rx="8" fill="var(--caliche)" stroke="var(--thunderstorm)" stroke-width="2"/>
+<text x="285" y="132" font-size="19" font-weight="600">Examiner</text><text x="420" y="132" font-size="16">uses the application to choose which lenders to review first</text>
+<rect x="260" y="175" width="820" height="80" rx="8" fill="var(--ss)" fill-opacity="0.16" stroke="var(--ss)" stroke-width="3"/>
+<text x="285" y="207" font-size="19" font-weight="600">SS · application</text><text x="285" y="235" font-size="16">Streamlit view of rates and flags · scheduled job that loads complaints and the loan file</text>
+<rect x="260" y="275" width="820" height="80" rx="8" fill="var(--ba)" fill-opacity="0.16" stroke="var(--ba)" stroke-width="3"/>
+<text x="285" y="307" font-size="19" font-weight="600">BA · analysis</text><text x="285" y="335" font-size="16">complaints per 1,000 loans for each lender · test against the state rate · flag</text>
+<rect x="260" y="375" width="820" height="80" rx="8" fill="var(--dm)" fill-opacity="0.16" stroke="var(--dm)" stroke-width="3"/>
+<text x="285" y="407" font-size="19" font-weight="600">DM · data</text><text x="285" y="435" font-size="16">complaints table · loans table · match table from company name to lender ID</text>
+<rect x="260" y="475" width="820" height="80" rx="8" fill="var(--cn)" fill-opacity="0.12" stroke="var(--cn)" stroke-width="3"/>
+<text x="285" y="507" font-size="19" font-weight="600">CN · controls</text><text x="285" y="535" font-size="16">secrets outside the repository · file hashes · consent rule on narratives</text>
+<g font-size="14" text-anchor="end">
+<text x="245" y="270" style="fill:var(--thunderstorm)">decision delivery</text>
+<text x="245" y="370" style="fill:var(--thunderstorm)">data pipeline</text>
+<text x="245" y="463" style="fill:var(--thunderstorm)">data protection</text><text x="245" y="480" style="fill:var(--thunderstorm)">and governance</text>
+</g>
+<line x1="1120" y1="190" x2="1120" y2="540" stroke="var(--thunderstorm)" stroke-width="2.5" marker-end="url(#arr)"/>
+<text x="1155" y="365" text-anchor="middle" font-size="14" transform="rotate(90 1155 365)" style="fill:var(--thunderstorm)">each layer uses the one below</text>
+</g>
+
+<g id="hub" class="view">
+<g stroke="var(--thunderstorm)" stroke-width="2.5">
+<line x1="390" y1="200" x2="530" y2="255"/><line x1="840" y1="200" x2="700" y2="255"/><line x1="390" y1="420" x2="530" y2="385"/><line x1="840" y1="420" x2="700" y2="385"/>
+</g>
+<circle cx="615" cy="320" r="112" fill="var(--caliche)" stroke="var(--maroon)" stroke-width="3"/>
+<text x="615" y="292" text-anchor="middle" font-size="16" font-weight="600" style="fill:var(--maroon)">THE DECISION</text>
+<text x="615" y="322" text-anchor="middle" font-size="17">Which lenders</text>
+<text x="615" y="344" text-anchor="middle" font-size="17">to review first?</text>
+<rect x="90" y="90" width="300" height="110" rx="8" fill="var(--ba)" fill-opacity="0.16" stroke="var(--ba)" stroke-width="3"/>
+<text x="110" y="124" font-size="19" font-weight="600">BA</text><text x="110" y="152" font-size="15">a complaint rate for each lender,</text><text x="110" y="174" font-size="15">tested against the state rate</text>
+<rect x="840" y="90" width="300" height="110" rx="8" fill="var(--dm)" fill-opacity="0.16" stroke="var(--dm)" stroke-width="3"/>
+<text x="860" y="124" font-size="19" font-weight="600">DM</text><text x="860" y="152" font-size="15">complaints and loans in one</text><text x="860" y="174" font-size="15">schema, matched to lenders</text>
+<rect x="90" y="420" width="300" height="110" rx="8" fill="var(--ss)" fill-opacity="0.16" stroke="var(--ss)" stroke-width="3"/>
+<text x="110" y="454" font-size="19" font-weight="600">SS</text><text x="110" y="482" font-size="15">data loaded every day; results</text><text x="110" y="504" font-size="15">in an application the examiner runs</text>
+<rect x="840" y="420" width="300" height="110" rx="8" fill="var(--cn)" fill-opacity="0.12" stroke="var(--cn)" stroke-width="3"/>
+<text x="860" y="454" font-size="19" font-weight="600">CN</text><text x="860" y="482" font-size="15">credentials, file integrity, and</text><text x="860" y="504" font-size="15">the consent rule on narratives</text>
+<g font-size="14" text-anchor="middle">
+<text x="615" y="140" style="fill:var(--thunderstorm)">data pipeline</text>
+<text x="615" y="490" style="fill:var(--thunderstorm)">secure delivery</text>
+<text x="240" y="305" style="fill:var(--thunderstorm)">decision</text><text x="240" y="322" style="fill:var(--thunderstorm)">delivery</text>
+<text x="990" y="305" style="fill:var(--thunderstorm)">data protection</text><text x="990" y="322" style="fill:var(--thunderstorm)">and governance</text>
+</g>
+</g>
+</svg>
+</div>
+<div class="caption"><p class="k" id="capk"></p><p id="capp"></p></div>
+<div class="ctrl">
+<div class="views" role="tablist" aria-label="View">
+<button role="tab" data-v="chain">Chain</button>
+<button role="tab" data-v="stack">Stack</button>
+<button role="tab" data-v="hub">Hub</button>
+</div>
+<span class="tag">Grey labels are overlaps from <a href="interaction-space.html">Figure 01</a>.</span>
+</div>
+</div>
+<h2>Reading the figure</h2>
+<p>The three views are not alternatives to choose between. Each answers a different question about one design, and a complete design can answer all three. A reader who sees only the chain can miss that CN acts at every step. A reader who sees only the stack can miss the order in which data arrive. A reader who sees only the hub can miss how the areas connect to each other.</p>
+<p>The example integrates all four areas. A prototype that integrates SS and any two of the others also meets the capstone rule. SS appears twice in the chain because software both loads the data and delivers the result. It is required because the prototype must function, not because it sits at the center; in the hub, the center is the decision.</p>
+<p>The proposal diagram uses the chain view, because the proposal states the order in which the areas act. How to mark the first slice on that chain is in <a href="minimum-demo.html">Figure 03</a>. The stack and hub views are useful in the synthesis paper.</p>
+<footer>Dr. Jeffry Babb · Paul and Virginia Engler College of Business · West Texas A&amp;M University · CIDM 6395 · Fall 2026</footer>
+</div>
+<script>
+const views={
+ chain:{k:"Chain: in what order does the work happen?",p:"The chain reads left to right as a process flow. SS loads complaints from the CFPB API each day and the HMDA loan file each year. DM stores both and matches each complaint's company name to a lender identifier. BA computes complaints per 1,000 loans and flags each lender whose rate differs from the state rate by more than chance. SS shows the result to the examiner. CN does not sit at one point in the chain. It acts along the whole flow."},
+ stack:{k:"Stack: what depends on what?",p:"The stack reads top to bottom as dependence. The examiner uses the application. The application shows what the analysis computes. The analysis reads what the data layer stores. All of it runs under the controls at the bottom. If one layer fails, every layer above it fails too."},
+ hub:{k:"Hub: what does each area contribute?",p:"The hub puts the decision at the center, not an area. Each area is a spoke and supplies a different part of the answer. The diagonal overlaps are not labeled. Here the persistence layer (SS with DM) holds the complaint and loan tables. Security analytics (BA with CN) is absent, because nothing in this project analyzes security data."}
+};
+const tabs=[...document.querySelectorAll(".views button")],capk=document.getElementById("capk"),capp=document.getElementById("capp");
+function show(v){Object.keys(views).forEach(k=>document.getElementById(k).classList.toggle("on",k===v));
+ tabs.forEach(b=>b.setAttribute("aria-selected",b.dataset.v===v?"true":"false"));
+ capk.textContent=views[v].k;capp.textContent=views[v].p;}
+tabs.forEach(b=>b.onclick=()=>show(b.dataset.v));
+document.addEventListener("keydown",e=>{const order=Object.keys(views);const cur=order.indexOf(tabs.find(b=>b.getAttribute("aria-selected")==="true").dataset.v);
+ if(e.key==="ArrowRight")show(order[Math.min(order.length-1,cur+1)]);if(e.key==="ArrowLeft")show(order[Math.max(0,cur-1)]);});
+show("chain");
+</script>
+</body>
+</html>
