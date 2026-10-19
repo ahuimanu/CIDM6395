@@ -14,16 +14,13 @@
 <header>
 <div class="eyebrow">Guide · The proposal</div>
 <h1>The proposal</h1>
-<p class="lede">The proposal is where you commit, in writing, to what you will build. I read it to decide whether the project is feasible, and at the end of the term we both read it again to see whether you built what you said you would.</p>
+<p class="lede">The proposal is the first document of your final project and the one I approve before you begin to build. Because we do not meet to review designs, it has to make the whole case for your project on the page: the problem, the synthesis prototype you will deliver this term, the full project it is a sample of, and the data and tools it depends on.</p>
 </header>
 
-<h2>Instead of a meeting</h2>
-<p>We do not hold design meetings, so the proposal has to answer on the page the questions I would otherwise ask across a table. Where it does not, I ask in writing and you answer in writing. The <a href="../protocol/proposal-cycle.html">proposal cycle</a> sets out how that exchange works.</p>
-
 <h2>The nine sections</h2>
-<p>The sections come in the order a reviewer needs them, and each answers one question.</p>
+<p>Write the proposal in <code>proposal/proposal.md</code>, in nine sections and no more than two pages of text, with your drawing of the project embedded in it. The sections follow the order in which a reviewer needs the information, and each one answers a single question. The proposal assignment in WTClass gives the full instructions for each section.</p>
 <table>
-<tr><th>Section</th><th>The question it answers</th></tr>
+<tr><th>Section</th><th>What it answers</th></tr>
 <tr><td>1. Pretext</td><td>Who has the problem, and what decision or operation does the project support?</td></tr>
 <tr><td>2. Process flow</td><td>In what order do the areas act, and what breaks without each one?</td></tr>
 <tr><td>3. The synthesis prototype</td><td>What exactly will run at the end of the term?</td></tr>
@@ -35,19 +32,23 @@
 <tr><td>9. AI use</td><td>Which AI tools will you use, and for what?</td></tr>
 </table>
 
-<h2>Pretext, flow, and prototype</h2>
-<p>Three sections need the most care. The pretext passes if I can identify the person who would act on your result and the action they would take. "Analyzing housing data" fails, because nobody acts on it; "a county appraisal office wants to know which neighborhoods its models undervalue, so it can schedule field reviews" passes. The pretext belongs to a user or an organization, real or a credible frame on real data, and never to the course.</p>
-<p>The process flow lists the areas in the order they act and says, for each one in the prototype, what would break without it. If nothing would break, the area is decoration and does not count toward the requirement of SS plus two others.</p>
-<p>Section 3 describes the synthesis prototype: its inputs, what each area does to them, its outputs, its interface, and the one complete path from source to result. Write it precisely enough that a stranger could check, at the end of the term, whether you delivered it. <a href="../figures/minimum-demo.html">Figure 03</a> shows how to mark it on your drawing.</p>
+<h2>The pretext</h2>
+<p>As used in this course, the <em>pretext</em> is the problem your project serves, stated as a person or organization and the decision they would make with your result. "Analyzing housing data" is not a pretext, since no one acts on it. "A county appraisal office wants to know which neighborhoods its models undervalue, so that it can schedule field reviews" is one, because it identifies who acts and what they do. The organization may be real, or it may be a credible frame placed on real data.</p>
+
+<h2>The process flow</h2>
+<p>The process flow lists the areas in the order in which they act, and for each area in the prototype it states what would break if that area were removed. That second statement is the test of integration. An area whose removal breaks nothing is decoration, and it does not count toward the requirement that the prototype integrate SS and at least two of BA, DM, and CN.</p>
+
+<h2>The synthesis prototype</h2>
+<p>Section 3 describes what will run at the end of the term: the inputs (which data, how many records, over what period), what each area does to them, the outputs, the interface, and the one complete path from the source data to what a user sees. Write it precisely enough that you and I can both check, at the end of the term, whether you built it, because that is the comparison the final review makes.</p>
 
 <h2>The drawing</h2>
-<p>Include your own drawing of the project in the form shown in <a href="../figures/minimum-demo.html">Figure 03</a>: the pretext on one line above, a box for each area in flow order with arrows between them, a solid box around the prototype, and dashed boxes around what the full project adds. Draw your own project. An orientation model with new labels tells me only that you saw the model.</p>
+<p>The drawing follows the form shown in <a href="../figures/minimum-demo.html">Figure 03</a>: the pretext on one line at the top, a box for each area in flow order with arrows between them, a solid box around the synthesis prototype, and dashed boxes around what the full project adds. Draw your own project. A relabeled copy of an orientation model does not show me how your project is designed.</p>
 
 <h2>Data and tools</h2>
-<p>In section 5, the data have to meet four conditions (relevance, accountability, availability, and quality), which the <a href="prototype.html">prototype guide</a> explains. A sample dataset from a site like Kaggle usually fails at least two of them; public data from an agency that stands behind it usually passes. Section 6 lists the tools. The prototype is in Python, and anything else needs my approval, which I give only for tools that run on Windows, macOS, and Linux.</p>
+<p>Section 5 gives a table of your data sources (the source, who answers for it, what one record describes, how you obtain it, and its terms) followed by a sentence or two on each of the four data conditions that the <a href="prototype.html">prototype guide</a> explains. Section 6 lists the Python version, the main libraries, and any other tools. I approve tools other than Python only when they run on Windows, macOS, and Linux, so that I can run your prototype on any of them.</p>
 
-<h2>Changing course</h2>
-<p>You may change the project after the proposal. Explain the change in your root README and it costs nothing. An unexplained change leaves the final work hard to reconcile with what I approved, and that costs continuity points.</p>
+<h2>After you submit</h2>
+<p>I review the proposal and commit <code>feedback/proposal.md</code>, which holds my decision and a set of numbered questions; you answer the questions in <code>proposal/consultation-response.md</code>. The <a href="../protocol/proposal-cycle.html">proposal cycle</a> describes each step. You may change the project after it is approved, provided you explain the change in your root README, since the final review compares what you deliver with what you proposed.</p>
 
 <h2>Files in your repository</h2>
 <p>Commit these files at exactly these paths. <a href="repository.html">Your repository</a> shows the full structure.</p>
@@ -55,7 +56,7 @@
 <tr><th>File or folder</th><th>What it holds</th></tr>
 <tr><td><code>proposal/proposal.md</code></td><td>The proposal, nine sections, at most two pages of text.</td></tr><tr><td><code>proposal/diagram.png or .svg</code></td><td>Your drawing of the project, embedded in the proposal.</td></tr><tr><td><code>proposal/consultation-response.md</code></td><td>Your numbered answers to my questions.</td></tr><tr><td><code>feedback/proposal.md</code></td><td>My decision and numbered questions. This file is mine: leave it as it is.</td></tr>
 </table>
-<p class="tag">Specific details about dates, submission, and scoring are in WTClass. The full proposal instructions are on the WTClass assignment page.</p>
+<p class="tag">Specific details about dates, submission, and scoring are in WTClass.</p>
 <footer>Dr. Jeffry Babb · Paul and Virginia Engler College of Business · West Texas A&amp;M University · CIDM 6395 · Fall 2026</footer>
 </div>
 </body>

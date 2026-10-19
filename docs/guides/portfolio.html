@@ -14,28 +14,36 @@
 <header>
 <div class="eyebrow">Guide · The portfolio and bio</div>
 <h1>The portfolio and bio</h1>
-<p class="lede">The portfolio is the evidence that your coursework prepared you for this project: what you can do in each of the four areas, shown with work you actually did. The bio puts a person in front of that evidence.</p>
+<p class="lede">Your portfolio records what the program has prepared you to do. It sits in the <code>portfolio/</code> folder of your repository and holds your bio, your skills inventory, and your four area appraisals, each with the work it cites. Because the proposal, the paper, and the debrief all draw on it, it comes before the project.</p>
 </header>
 
-<h2>What is in it</h2>
-<p>The portfolio is the <code>portfolio/</code> folder of your private repository. It holds your bio, the skills inventory you wrote for Evolution 0, and one folder for each area, BA, DM, SS, and CN. Each area folder holds your final appraisal for that area as <code>README.md</code>, next to the code, notebooks, SQL, schemas, diagrams, and reports the appraisal cites. The four folders line up with the four regions of <a href="../figures/interaction-space.html">Figure 01</a>; the prototype sits where the regions overlap.</p>
-<p>Your repository does two jobs. It is how you submit the capstone, and it is the record you can show an employer when the course is over. The portfolio is the part an employer will read first, which is one reason the bio belongs in it.</p>
+<h2>What the portfolio contains</h2>
+<p>By the final commit, <code>portfolio/</code> holds these files and folders:</p>
+<ol>
+<li><code>BIO.md</code>, your professional bio.</li>
+<li><code>inventory/README.md</code>, the skills inventory you wrote for Evolution 0.</li>
+<li><code>BA/</code>, <code>DM/</code>, <code>SS/</code>, and <code>CN/</code>, each holding your final appraisal for that area as <code>README.md</code>, together with the work the appraisal cites.</li>
+</ol>
+<p>During the term you wrote the inventory and the appraisals in top-level folders named <code>evolution-0</code> to <code>evolution-4</code>. Move them into <code>portfolio/</code> before the final commit, following the table in <a href="repository.html">Your repository</a>, so that every repository has the same layout and I can check each one in the same way.</p>
 
 <h2>The bio</h2>
-<p><code>portfolio/BIO.md</code> says who you are, what you did in the program and outside it, and what you mean to do next. Keep it professional and specific. The appraisals show your competency area by area; the bio says whose competency it is.</p>
+<p>Write the bio for a reader outside the course, such as a prospective employer, since the portfolio is the part of your repository that such a reader opens first. It should say who you are, what you did in the program and in your work, and what you intend to do next. Keep it specific: mention the courses, projects, and roles that matter, rather than describing yourself in general terms.</p>
 
-<h2>Why it comes before the proposal</h2>
-<p>You can only integrate what you already have. Before you propose a project that joins four areas, you need to know what you can do in each one and where you fall short, and the appraisals are where you work that out. The proposal then cites them by file path in section 8, the paper uses them as evidence for its claims about each area, and the debrief tests whether what you claimed matches what you can explain.</p>
-
-<h2>What an appraisal argues</h2>
-<p>Each appraisal rests on the competency model from orientation. <em>Knowledge</em> is what you know; a <em>skill</em> is how you use it; and the two together, proven on a task you actually did, make a <em>competency</em>. "SQL" is knowledge. "Writing a windowed query to rank customers by quarter" is a skill. An appraisal that lists knowledge and calls it competence has not yet made an argument.</p>
-<p>The appraisal starts with three tiers of self-assessment: what you can do again tomorrow without help, where you are weak in ways that would matter for the capstone (and why), and what practitioners in the area do that your courses never reached. That third tier takes some reading about the field, and it is the one most often skipped or folded into the second.</p>
-<p>It then backs those claims with links to your own work in the repository, the sources you learned from (titles, authors, URLs), and a short capability statement. It ends with the area's place in the capstone: why and how it connects to the other three, where it already has in your own work, and a statement of your own about how the four fit together. By Evolution 4 that statement is the first draft of your thesis.</p>
+<h2>The appraisals</h2>
+<p>Each appraisal assesses where you stand in one area. As used in this course, <em>knowledge</em> is what you know about an area and a <em>skill</em> is what you can do with it, and an appraisal has to show skills, proven on work you actually did, rather than list knowledge. "SQL" is knowledge; "writing a windowed query to rank customers by quarter" is a skill.</p>
+<p>An appraisal has three parts. The assignment pages in WTClass give the full prompt for each.</p>
+<ol>
+<li>A self-assessment in three tiers: what you can do again without help, where you are weak in ways that would matter for the capstone and why, and what practitioners in the area do that your courses did not cover. The third tier requires some reading about the field.</li>
+<li>Support for those claims: links to your own work in the repository, the sources you learned from (titles, authors, URLs), and a short statement of what you can now do in the area.</li>
+<li>The area's place in the capstone: how it connects to the other three areas, in general and in your own work, and a statement of your own about how the four fit together.</li>
+</ol>
 
 <h2>Evidence</h2>
-<p>The work an appraisal cites has to be in the repository. A link to another repository or a cloud drive can sit beside the work but cannot stand in for it, since links break and I evaluate the repository as it is at the deadline. A claim I cannot open a file to check does not count as evidence.</p>
-<p>Three things have cost students the most here. One is an integration section copied from the previous appraisal with the area name changed, when each area depends on the others differently. Another is a strength with no work behind it. The third is work that was never committed to the course repository, which leaves me nothing to evaluate.</p>
-<p>Weaknesses belong in a portfolio you intend to show. An engineer who states the limits of a design is trusted more than one who claims it has none, and a reader of your appraisal will make the same judgment.</p>
+<p>The work an appraisal cites has to be in the repository. A link to another repository or to a cloud drive can accompany the work but cannot replace it, because I evaluate the repository as it stands at the deadline, and by then a link may have changed or stopped working. A claim that points to no file in the repository gives me nothing to check, so it does not count as evidence.</p>
+<p>The evolution rubric records the three problems that cost the most points in past terms: an integration section copied from one appraisal to the next with only the area name changed, a strength claimed with no work behind it, and work that was never committed to the course repository.</p>
+
+<h2>How the rest of the capstone uses it</h2>
+<p>The proposal cites your appraisals by file path in section 8, and the paper uses them as evidence for what it says about each area. In the debrief I ask about the work they cite.</p>
 
 <h2>Files in your repository</h2>
 <p>Commit these files at exactly these paths. <a href="repository.html">Your repository</a> shows the full structure.</p>
