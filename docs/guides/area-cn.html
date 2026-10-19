@@ -14,12 +14,12 @@
 <header>
 <div class="eyebrow">Guide · The four areas · CN</div>
 <h1>Networking and Cybersecurity (CN)</h1>
-<p class="lede">Networking and Cybersecurity covers the networks a system runs on and the controls that protect it. In the capstone it is what makes a prototype safe to run on real data.</p>
+<p class="lede">Networking and Cybersecurity covers the networks a system runs on and the controls that protect it. In the capstone, CN is the area that makes a prototype safe to run on real data.</p>
 </header>
 
-<h2>In a working system</h2>
-<p>CN deals with access, credentials, encryption, integrity, risk, and policy. What it contributes is trust: a reviewer can believe the data were not altered, the secrets were not exposed, and the system respects the terms under which the data were released.</p>
-<p>CN rarely sits at one point in the flow. It applies at every step, which is why the chain view in <a href="../figures/three-views.html">Figure 02</a> draws it as a band under the other areas. In <a href="../figures/interaction-space.html">Figure 01</a>, CN meets SS in secure delivery, DM in data protection and governance, and BA in security analytics.</p>
+<h2>Controls along the whole flow</h2>
+<p>CN deals with access, credentials, encryption, integrity, risk, and policy. Its contribution to a prototype is the reviewer's confidence that the data were not altered, that no secrets were exposed, and that the system respects the terms under which the data were released.</p>
+<p>CN seldom acts at a single point in the flow. Its controls apply at every step, which is why the chain view in <a href="../figures/three-views.html">Figure 02</a> draws CN as a band beneath the other areas. In <a href="../figures/interaction-space.html">Figure 01</a>, CN meets SS in secure delivery, DM in data protection and governance, and BA in security analytics.</p>
 
 <h2>The courses behind it</h2>
 <table>
@@ -29,11 +29,10 @@
 <tr><td>CIDM 6356</td><td>Detecting fraud and fabricated information with machine learning and natural language processing, and digital forensics.</td></tr>
 <tr><td>CIDM 4380</td><td>Cloud infrastructure: secure remote access, firewalls and encryption, containers, CI/CD pipelines, and system observability.</td></tr>
 </table>
+<p>Two of these courses cross area lines. CIDM 4380 builds and deploys systems, which makes it as much SS as CN, and CIDM 6356 analyzes data to detect fraud, which makes it as much BA.</p>
 
-<p>Two of these courses cross area lines. CIDM 4380 builds and deploys systems, which is as much SS as CN, and CIDM 6356 analyzes data to detect fraud, which is as much BA.</p>
-
-<h2>In your prototype</h2>
-<p>Students often leave CN for the paper. A prototype on real data nearly always has something to protect, though: an API key, a file whose integrity matters, a field the data's terms restrict. Take CN away and something unsafe happens. In the repository, show credentials kept out of the code, integrity checks, access rules, and a record of the data's terms of use. If you want to build on security data itself, CISA's Known Exploited Vulnerabilities catalog is a good place to start.</p>
+<h2>What to show in your repository</h2>
+<p>The proposal review watches for one risk in particular, a project that leaves CN for the paper. A prototype that runs on real data nearly always has something to protect, such as an API key, a file whose integrity matters, or a field whose use the data's terms restrict, and the proposal should say what CN protects in yours. In the repository, show credentials kept out of the code, integrity checks, access rules, and a record of the data's terms of use. If you want to work with security data itself, CISA's Known Exploited Vulnerabilities catalog is a good source to start from.</p>
 
 <p class="tag">Course objectives are summarized from the course syllabi. The area names follow the 2026–2027 Graduate Catalog. Specific details about dates, submission, and scoring are in WTClass.</p>
 <footer>Dr. Jeffry Babb · Paul and Virginia Engler College of Business · West Texas A&amp;M University · CIDM 6395 · Fall 2026</footer>

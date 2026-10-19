@@ -17,9 +17,9 @@
 <p class="lede">Data Mining and Management makes data usable and trustworthy. In a capstone built on real data, much of the work is DM work.</p>
 </header>
 
-<h2>In a working system</h2>
-<p>DM extracts data from its sources, cleans and transforms it, stores it in a designed structure, and mines it for patterns. What it hands on is data the rest of the system can rely on: a schema whose fields mean one thing, and a pipeline that produces the same tables when you run it again.</p>
-<p>Real data bring real DM problems. Two sources disagree about a company's name; a field changes definition between years; records arrive twice, or late, or corrected. In the example project on this site, matching complaint company names to the identifiers in the loan data is the step that takes the most judgment, and it is DM work. Problems like these are evidence that your data are real, which is one reason a pre-cleaned sample dataset makes a weak capstone.</p>
+<h2>From raw sources to tables you can trust</h2>
+<p>DM extracts data from its sources, cleans and transforms it, stores it in a designed structure, and mines it for patterns. The rest of the system depends on the result: a schema in which each field has one meaning, and a pipeline that produces the same tables each time it runs.</p>
+<p>Real data bring problems of their own. Two sources may disagree about a company's name, a field may change its definition between years, and records may arrive twice, late, or corrected. In the example project on this site, matching the company names in the complaint data to the lender identifiers in the loan data is the step that takes the most judgment, and it is DM work. Problems of this kind are evidence that the data are real, which is one reason a pre-cleaned sample dataset makes a weak capstone.</p>
 <p>In <a href="../figures/interaction-space.html">Figure 01</a>, DM meets BA in the data pipeline, SS in the persistence layer, and CN in data protection and governance.</p>
 
 <h2>The courses behind it</h2>
@@ -29,11 +29,10 @@
 <tr><td>CIDM 6351</td><td>Extraction, transformation, and loading: warehouses, lakes, marts, and pipelines, web scraping, and preparing high-quality data for analysis.</td></tr>
 <tr><td>CIDM 6355</td><td>Data mining concepts and algorithms, problem formulation, data preparation, supervised and unsupervised techniques, model evaluation, and responsible use of AI tools.</td></tr>
 </table>
+<p>The boundaries between areas are not sharp here. CIDM 6355 covers model evaluation and the communication of results, which is BA work as well, and CIDM 6303, counted toward SS, teaches the SQL and normalization that form the core of CIDM 6350.</p>
 
-<p>The boundaries here are not sharp. CIDM 6355 covers model evaluation and communicating results, which is BA work as well, and CIDM 6303, counted toward SS, teaches the SQL and normalization at the core of CIDM 6350.</p>
-
-<h2>In your prototype</h2>
-<p>DM usually sits between the source and the analysis. Take it away and the analysis runs on data nobody has checked. In the repository, show a schema, a pipeline that runs from the README, and a record of the cleaning and matching decisions you made. Much of what the <a href="prototype.html">prototype guide</a> asks of your data is DM work.</p>
+<h2>What to show in your repository</h2>
+<p>In the proposal, say what the analysis would lose without DM; in the example project, it would run on complaint records that no one had matched to a lender or checked. In the repository, show the schema, a pipeline that runs from the README, and a record of the cleaning and matching decisions you made. Much of what the <a href="prototype.html">prototype guide</a> requires of your data is DM work.</p>
 
 <p class="tag">Course objectives are summarized from the course syllabi. The area names follow the 2026–2027 Graduate Catalog. Specific details about dates, submission, and scoring are in WTClass.</p>
 <footer>Dr. Jeffry Babb · Paul and Virginia Engler College of Business · West Texas A&amp;M University · CIDM 6395 · Fall 2026</footer>

@@ -14,12 +14,12 @@
 <header>
 <div class="eyebrow">Guide · The four areas · BA</div>
 <h1>Data Analytics (BA)</h1>
-<p class="lede">Data Analytics is the area that answers the question in your pretext. It takes data that DM has prepared and turns it into something a person can act on.</p>
+<p class="lede">Data Analytics is the area that answers the question in your pretext. It takes data that DM has prepared and turns it into a finding that a person can act on.</p>
 </header>
 
-<h2>In a working system</h2>
-<p>BA produces findings: a rate, a forecast, a classification, a comparison, a chart that makes a pattern visible. In the example project used across this site, BA computes complaints per thousand loans for each lender and flags the ones that stand out, and that flag is what the examiner acts on. A system without BA can store and move data, but it cannot answer anything about it.</p>
-<p>BA leans on the other areas at both ends. Its input has to arrive in a known shape, which is DM's job. Its output reaches a user only through software, which is SS. And when the data or the result is confidential, CN decides who sees it. In <a href="../figures/interaction-space.html">Figure 01</a> those three overlaps are the data pipeline (with DM), decision delivery (with SS), and security analytics (with CN).</p>
+<h2>From prepared data to a finding</h2>
+<p>The findings BA produces take many forms, among them a rate, a forecast, a classification, a comparison, or a chart that makes a pattern visible. In the example project used across this site, BA computes complaints per thousand loans for each lender and flags the lenders whose rates stand out, and the examiner decides which lenders to review on the strength of that flag. Without BA, the system would store and move the data without telling the examiner anything about it.</p>
+<p>BA depends on the other areas at both ends of its work. Its input has to arrive in a known shape, which is the work of DM; its output reaches a user only through software, which is the work of SS; and when the data or the result is confidential, CN determines who may see it. In <a href="../figures/interaction-space.html">Figure 01</a> these three overlaps are the data pipeline (with DM), decision delivery (with SS), and security analytics (with CN).</p>
 
 <h2>The courses behind it</h2>
 <table>
@@ -28,11 +28,10 @@
 <tr><td>CIDM 6308</td><td>Data preparation, visualization, regression, classification, and clustering applied to business problems.</td></tr>
 <tr><td>CIDM 6312</td><td>Visualization design: perception, encoding, evaluating clarity and accuracy, and telling a story to an audience.</td></tr>
 </table>
+<p>CIDM 4310 already has you building Streamlit applications. Since Streamlit is one of the three interfaces a prototype can use, that course gives you some practice in SS as well.</p>
 
-<p>CIDM 4310 already has you building Streamlit applications, and Streamlit is one of the three interfaces a prototype can use, so a BA course gives you some SS practice too.</p>
-
-<h2>In your prototype</h2>
-<p>BA is usually the step that produces what the user acts on. The proposal test is simple: take BA away and the user gets data but no answer. In the repository, BA should appear as code that computes the result (a script, or a notebook the pipeline calls), not as a chart pasted into the paper.</p>
+<h2>What to show in your repository</h2>
+<p>In the proposal, say what the user would lose if BA were removed; in the example project, the examiner would receive the data but no flag. In the repository, BA appears as code that computes the result, either a script or a notebook that the pipeline calls. A chart pasted into the paper does not show that the computation exists.</p>
 
 <p class="tag">Course objectives are summarized from the course syllabi. The area names follow the 2026–2027 Graduate Catalog. Specific details about dates, submission, and scoring are in WTClass.</p>
 <footer>Dr. Jeffry Babb · Paul and Virginia Engler College of Business · West Texas A&amp;M University · CIDM 6395 · Fall 2026</footer>
