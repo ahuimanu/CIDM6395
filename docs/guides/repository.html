@@ -20,36 +20,44 @@
 <p>Your private repository in the course GitHub organization is where you submit every piece of the capstone, and it is the portfolio you show after the course ends. Every deliverable is a file in it. Nothing outside it counts unless the repository links to it clearly, and I evaluate it at the commit that exists at the deadline.</p>
 
 <h2>The structure</h2>
-<p>Folder names can vary. Their functions cannot. If you use different names, say so in the root README.</p>
+<p>Use these paths and names exactly, including capitalization. Where the tree gives two names, use one of them. Exact names mean every repository can be checked the same way: I open each required path in turn. A file at a different path or under a different name is misplaced, and it costs organization points even when I find it. A file I cannot find is missing.</p>
 <pre><code>your-repository/
-├── README.md                  the front door: what is here and where
+├── README.md                     the front door: what is here and where
 ├── portfolio/
-│   ├── BIO.md                 your professional bio
-│   ├── evolution-0/README.md  the skills inventory
-│   ├── BA/                    one folder per area: README, final appraisal,
-│   ├── DM/                      and the work the appraisal cites
-│   ├── SS/
-│   └── CN/
+│   ├── BIO.md                    your professional bio
+│   ├── inventory/README.md       your skills inventory (Evolution 0)
+│   ├── BA/README.md              your final appraisal, with the work it cites
+│   ├── DM/README.md
+│   ├── SS/README.md
+│   └── CN/README.md
 ├── proposal/
-│   ├── proposal.md            nine sections, at most two pages of text
-│   ├── diagram.png            your drawing of the project (or .svg)
+│   ├── proposal.md               nine sections, at most two pages of text
+│   ├── diagram.png               your drawing of the project (or diagram.svg)
 │   └── consultation-response.md
 ├── prototype/
-│   ├── README.md              areas, Python version, data, run command, provenance
+│   ├── README.md                 areas, Python version, data, run command, provenance
 │   ├── requirements.txt
-│   ├── data/                  the data, or a script that retrieves it
-│   └── ...                    Python source, notebooks, tests
+│   ├── data/                     the data, or a script that retrieves it
+│   └── ...                       Python source, notebooks, tests
 ├── deliverables/
-│   ├── synthesis-paper.pdf    5 to 10 pages (or .md)
+│   ├── synthesis-paper.pdf       5 to 10 pages (or synthesis-paper.md)
 │   ├── slides.pptx
-│   └── video-link.md          or the video file
-└── feedback/                  the professor's files only
+│   └── video.mp4                 or video-link.md
+└── feedback/                     the professor's files only
     ├── evolution-N.md
     ├── proposal.md
     └── final-project.md</code></pre>
 
 <h2>Moving the evolution folders</h2>
-<p>The evolution assignments had you commit each appraisal to a top-level <code>evolution-N</code> folder. By the final commit, move <code>evolution-0</code> into <code>portfolio/</code>, and move <code>evolution-1</code> to <code>evolution-4</code> into <code>portfolio/</code> as the area folders they become: BA, DM, SS, and CN. Use <code>git mv</code> so the history of each file moves with it.</p>
+<p>The evolution assignments had you commit each appraisal to a top-level <code>evolution-N</code> folder. By the final commit, move them with <code>git mv</code>, so the history of each file moves with it:</p>
+<table>
+<tr><th>Move this folder</th><th>To this path</th></tr>
+<tr><td><code>evolution-0/</code></td><td><code>portfolio/inventory/</code></td></tr>
+<tr><td><code>evolution-1/</code></td><td><code>portfolio/BA/</code></td></tr>
+<tr><td><code>evolution-2/</code></td><td><code>portfolio/DM/</code></td></tr>
+<tr><td><code>evolution-3/</code></td><td><code>portfolio/SS/</code></td></tr>
+<tr><td><code>evolution-4/</code></td><td><code>portfolio/CN/</code></td></tr>
+</table>
 
 <h2>Who writes what</h2>
 <table>
@@ -70,11 +78,11 @@
 <h2>Three rules</h2>
 <ol>
 <li><strong>Work is a file, not a link.</strong> A link to another repository or a cloud drive can supplement the work. It does not replace it.</li>
-<li><strong>One final version.</strong> If more than one version of a file exists, name the final one or point to it from the README. If I have to guess, the guess costs organization points.</li>
+<li><strong>One final version.</strong> Only the file at the required path counts. Move drafts and earlier versions out of the way, or delete them.</li>
 <li><strong>No secrets.</strong> No credentials, API keys, or private data anywhere in the commit history.</li>
 </ol>
 
-<p class="tag">The WTClass page "Your Course Repository: Required Structure" lists the folder names I recognize without a note.</p>
+<p class="tag">The WTClass page "Your Course Repository: Required Structure" gives the same list of required files.</p>
 <footer>Dr. Jeffry Babb · Paul and Virginia Engler College of Business · West Texas A&amp;M University · CIDM 6395 · Fall 2026</footer>
 </div>
 </body>
