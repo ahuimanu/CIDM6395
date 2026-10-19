@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Your Repository</title>
+<meta name="description" content="The required structure of the capstone repository: every folder, who writes it, and which deliverable it holds.">
+<link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+<div class="masthead"><div class="wrap"><a class="course" href="../">CIDM 6395 · MS-CISBA Capstone</a><span class="inst">West Texas A&amp;M University · Paul and Virginia Engler College of Business</span></div></div>
+<div class="wrap">
+<nav class="top"><a href="../">Home</a><a href="../#figures">Figures</a><a href="../#guides" aria-current="page">Guides</a><a href="../#protocol">Protocol</a></nav>
+<header>
+<div class="eyebrow">Guide · Your repository</div>
+<h1>Your Repository</h1>
+<p class="lede">Every capstone deliverable is a file you leave in your course repository. This guide shows the structure, which folder holds each deliverable, and who writes each file.</p>
+</header>
+<h2>One repository, two jobs</h2>
+<p>Your repository in the course GitHub organization is where you turn in every piece of the capstone, and it is the portfolio you show after the course ends. Every deliverable is a file in it. Nothing outside it counts unless the repository links to it clearly, and I evaluate it at the commit that exists at the deadline.</p>
+
+<h2>The structure</h2>
+<p>Folder names can vary. Their functions cannot. If you use different names, say so in the root README.</p>
+<pre><code>your-repository/
+├── README.md                  the front door: what is here and where
+├── BIO.md                     your professional bio
+├── evolution-0/README.md      the skills inventory
+├── BA/                        one folder per area: README, final appraisal,
+├── DM/                          and the work the appraisal cites
+├── SS/
+├── CN/
+├── proposal/
+│   ├── proposal.md            nine sections, at most two pages of text
+│   ├── diagram.png            your drawing of the project (or .svg)
+│   └── consultation-response.md
+├── prototype/
+│   ├── README.md              areas, Python version, data, run command, provenance
+│   ├── requirements.txt
+│   ├── data/                  the data, or a script that retrieves it
+│   └── ...                    Python source, notebooks, tests
+├── deliverables/
+│   ├── synthesis-paper.pdf    5 to 10 pages (or .md)
+│   ├── slides.pptx
+│   └── video-link.md          or the video file
+└── feedback/                  the professor's files only
+    ├── evolution-N.md
+    ├── proposal.md
+    └── final-project.md</code></pre>
+
+<h2>Who writes what</h2>
+<table>
+<tr><th>Location</th><th>Written by</th><th>Deliverable</th><th>Guide</th></tr>
+<tr><td><code>README.md</code>, <code>BIO.md</code>, area folders</td><td>Student</td><td>Portfolio and bio</td><td><a href="portfolio.html">Portfolio</a></td></tr>
+<tr><td><code>proposal/</code></td><td>Student</td><td>Proposal</td><td><a href="proposal.html">Proposal</a></td></tr>
+<tr><td><code>prototype/</code></td><td>Student</td><td>Synthesis prototype</td><td><a href="prototype.html">Prototype</a></td></tr>
+<tr><td><code>deliverables/</code> (paper)</td><td>Student</td><td>Synthesis paper</td><td><a href="paper.html">Paper</a></td></tr>
+<tr><td><code>deliverables/</code> (slides, video)</td><td>Student</td><td>Presentation</td><td><a href="presentation.html">Presentation</a></td></tr>
+<tr><td><code>feedback/</code></td><td>Professor</td><td>Feedback on each evaluation</td><td><a href="../protocol/evolution-feedback.html">Protocols</a></td></tr>
+</table>
+<p>The <code>feedback/</code> folder holds only my files. Do not edit, move, or delete them. Everything else in the repository is yours.</p>
+
+<h2>The root README</h2>
+<p>The root README is the front door. A reader should reach every deliverable in one click from it. It states what the portfolio contains, links to <code>BIO.md</code>, and gives the location of the four area folders, the proposal, the prototype, the paper, the slides, and the video. It also records which AI tools you used and for what (or points to the prototype README for this), and, if the project changed after the proposal, what changed and why.</p>
+
+<h2>Three rules</h2>
+<ol>
+<li><strong>Work is a file, not a link.</strong> A link to another repository or a cloud drive can supplement the work. It does not replace it.</li>
+<li><strong>One final version.</strong> If more than one version of a file exists, name the final one or point to it from the README. If I have to guess, the guess costs organization points.</li>
+<li><strong>No secrets.</strong> No credentials, API keys, or private data anywhere in the commit history.</li>
+</ol>
+
+<p class="tag">The WTClass page "Your Course Repository: Required Structure" lists the folder names I recognize without a note.</p>
+<footer>Dr. Jeffry Babb · Paul and Virginia Engler College of Business · West Texas A&amp;M University · CIDM 6395 · Fall 2026</footer>
+</div>
+</body>
+</html>

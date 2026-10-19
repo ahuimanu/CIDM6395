@@ -14,10 +14,10 @@
 <header>
 <div class="eyebrow">Guide · The synthesis prototype</div>
 <h1>The Synthesis Prototype</h1>
-<p class="lede">The prototype is the working artifact at the center of the capstone. It is a working sample of a larger project, built on real data, and it runs from its own instructions. This guide explains the constraints on its scope, its data, and the way it runs.</p>
+<p class="lede">The synthesis prototype is a time-bounded slice of a larger project, built as a minimum viable product (MVP). It runs on real data, from its own instructions. This guide explains the constraints on its scope, its data, and the way it runs.</p>
 </header>
 <h2>A sample of the full project</h2>
-<p>As used in this course, the <em>full project</em> is the work one competent person could do in about one year. It needs all four areas. The <em>synthesis prototype</em> is the part you build this term. The two are judged by different tests.</p>
+<p>As used in this course, the <em>full project</em> is the work one competent person could do in about one year. It needs all four areas. The <em>synthesis prototype</em> is a time-bounded slice of it that you build this term as a minimum viable product. The two are judged by different tests.</p>
 <p>The full project must need all four areas, because a project that one area could finish alone does not test synthesis. The synthesis prototype must fit in the weeks after the proposal, and it must show that the full project can work. For this reason the synthesis prototype is a sample of the full project, not a smaller project. It carries real data along one complete path through the areas the prototype integrates. Each step can do less than the full project would do, but every step runs.</p>
 <p>A student may object, correctly, that a prototype that does a little in every area looks less impressive than one area done well. The capstone does not ask for the most impressive area. It asks for evidence that the areas work together, and one complete path is that evidence. A prototype that builds each component halfway has no path from start to end, so it shows effort but not viability.</p>
 
@@ -43,6 +43,12 @@
 <p>A prototype built only in Excel is not accepted, and Excel macros are discouraged. Excel does not run on Linux, a macro that works on Windows can fail on a Mac, and Git stores a macro workbook as a binary file that a reviewer cannot compare between commits. Any tool other than Python needs my approval, and I approve only tools that run on Windows, macOS, and Linux.</p>
 <p>The prototype README states the Python version, the dependencies file, how to get the data, and the command that starts the prototype. At review, I clone the repository and follow the README from the first step. In the debrief I may ask you to demonstrate the prototype live for at least five minutes.</p>
 
+<h2>Files in your repository</h2>
+<p>These files stay in your course repository. Folder and file names can vary if your root README says where each one is. The <a href="repository.html">repository guide</a> shows the whole structure.</p>
+<table>
+<tr><th>File or folder</th><th>What it holds</th></tr>
+<tr><td><code>prototype/README.md</code></td><td>What the prototype is, the areas it integrates and what breaks without each, the Python version, how to get the data, the command that starts it, and the data provenance table.</td></tr><tr><td><code>prototype/requirements.txt</code></td><td>The dependencies, or an equivalent file.</td></tr><tr><td><code>prototype/ (source)</code></td><td>Python scripts, modules, and notebooks.</td></tr><tr><td><code>prototype/data/</code></td><td>The data, or a script that retrieves it from the source.</td></tr><tr><td><code>prototype/tests/</code></td><td>Tests or sample output that show the prototype works, where you have them.</td></tr>
+</table>
 <p class="tag">Dates, submission steps, and scoring are on the WTClass pages. The full constraints are in the WTClass page "Capstone Project Parameters and Requirements."</p>
 <footer>Dr. Jeffry Babb · Paul and Virginia Engler College of Business · West Texas A&amp;M University · CIDM 6395 · Fall 2026</footer>
 </div>
