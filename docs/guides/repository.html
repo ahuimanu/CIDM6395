@@ -23,12 +23,13 @@
 <p>Folder names can vary. Their functions cannot. If you use different names, say so in the root README.</p>
 <pre><code>your-repository/
 ├── README.md                  the front door: what is here and where
-├── BIO.md                     your professional bio
-├── evolution-0/README.md      the skills inventory
-├── BA/                        one folder per area: README, final appraisal,
-├── DM/                          and the work the appraisal cites
-├── SS/
-├── CN/
+├── portfolio/
+│   ├── BIO.md                 your professional bio
+│   ├── evolution-0/README.md  the skills inventory
+│   ├── BA/                    one folder per area: README, final appraisal,
+│   ├── DM/                      and the work the appraisal cites
+│   ├── SS/
+│   └── CN/
 ├── proposal/
 │   ├── proposal.md            nine sections, at most two pages of text
 │   ├── diagram.png            your drawing of the project (or .svg)
@@ -47,10 +48,14 @@
     ├── proposal.md
     └── final-project.md</code></pre>
 
+<h2>Moving the evolution folders</h2>
+<p>The evolution assignments had you commit each appraisal to a top-level <code>evolution-N</code> folder. By the final commit, move <code>evolution-0</code> into <code>portfolio/</code>, and move <code>evolution-1</code> to <code>evolution-4</code> into <code>portfolio/</code> as the area folders they become: BA, DM, SS, and CN. Use <code>git mv</code> so the history of each file moves with it.</p>
+
 <h2>Who writes what</h2>
 <table>
 <tr><th>Location</th><th>Written by</th><th>Deliverable</th><th>Guide</th></tr>
-<tr><td><code>README.md</code>, <code>BIO.md</code>, area folders</td><td>Student</td><td>Portfolio and bio</td><td><a href="portfolio.html">Portfolio</a></td></tr>
+<tr><td><code>README.md</code></td><td>Student</td><td>The front door to every deliverable</td><td>This page</td></tr>
+<tr><td><code>portfolio/</code></td><td>Student</td><td>Portfolio and bio</td><td><a href="portfolio.html">Portfolio</a></td></tr>
 <tr><td><code>proposal/</code></td><td>Student</td><td>Proposal</td><td><a href="proposal.html">Proposal</a></td></tr>
 <tr><td><code>prototype/</code></td><td>Student</td><td>Synthesis prototype</td><td><a href="prototype.html">Prototype</a></td></tr>
 <tr><td><code>deliverables/</code> (paper)</td><td>Student</td><td>Synthesis paper</td><td><a href="paper.html">Paper</a></td></tr>
@@ -60,7 +65,7 @@
 <p>The <code>feedback/</code> folder holds only my files. Do not edit, move, or delete them. Everything else in the repository is yours.</p>
 
 <h2>The root README</h2>
-<p>The root README is the front door. A reader should reach every deliverable in one click from it. It states what the portfolio contains, links to <code>BIO.md</code>, and gives the location of the four area folders, the proposal, the prototype, the paper, the slides, and the video. It also records which AI tools you used and for what (or points to the prototype README for this), and, if the project changed after the proposal, what changed and why.</p>
+<p>The root README is the front door. A reader should reach every deliverable in one click from it. It states what the portfolio contains, links to <code>portfolio/BIO.md</code> and the four area folders, and gives the location of the proposal, the prototype, the paper, the slides, and the video. It also records which AI tools you used and for what (or points to the prototype README for this), and, if the project changed after the proposal, what changed and why.</p>
 
 <h2>Three rules</h2>
 <ol>
