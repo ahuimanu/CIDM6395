@@ -14,11 +14,11 @@
 <header>
 <div class="eyebrow">Guide · Your repository</div>
 <h1>Your repository</h1>
-<p class="lede">Everything you hand in for the capstone is a file in your private repository in the course organization, at a path set below. I evaluate the repository as it stands at the commit made by the deadline.</p>
+<p class="lede">Everything you submit for the capstone is a file in your private repository in the course organization, at a path fixed in the list below. I evaluate the repository as it stands at your last commit before the deadline, so that commit is your submission.</p>
 </header>
 
 <h2>The required files</h2>
-<p>Use these paths and names exactly, capitalization included. Where the tree offers two names, pick one. Because every repository has the same layout, I can check each one the same way, opening each required path in turn. A file at another path or under another name is misplaced and costs organization points even when I find it. A file I cannot find is missing.</p>
+<p>Use these paths and names exactly, capitalization included; where the tree offers two names, use one of them. I ask for exact paths so that I can check every repository in the same way, opening each required path in turn. A file at another path or under another name is therefore misplaced, and it costs organization points even when I find it. A file I cannot find is missing.</p>
 <pre><code>your-repository/
 ├── README.md                     the front door: what is here and where
 ├── portfolio/
@@ -45,10 +45,10 @@
     ├── evolution-N.md
     ├── proposal.md
     └── final-project.md</code></pre>
-<p>Everything outside <code>feedback/</code> is yours to write. The <code>feedback/</code> folder holds only my files; leave them where they are and do not edit them. Each deliverable's guide explains what goes in its files: the <a href="portfolio.html">portfolio and bio</a>, the <a href="proposal.html">proposal</a>, the <a href="prototype.html">synthesis prototype</a>, the <a href="paper.html">paper</a>, and the <a href="presentation.html">presentation</a>.</p>
+<p>You write everything outside <code>feedback/</code>. That folder holds only the feedback files I commit, and you should leave them where they are without editing them, since they are the record of what I told you. Each deliverable's guide explains what goes in its files: the <a href="portfolio.html">portfolio and bio</a>, the <a href="proposal.html">proposal</a>, the <a href="prototype.html">synthesis prototype</a>, the <a href="paper.html">paper</a>, and the <a href="presentation.html">presentation</a>.</p>
 
 <h2>Moving the evolution folders</h2>
-<p>You committed each evolution to a top-level <code>evolution-N</code> folder. Before the final commit, move them into <code>portfolio/</code> with <code>git mv</code>, which carries each file's history along:</p>
+<p>During the term you committed each evolution to a top-level <code>evolution-N</code> folder, and before the final commit you move them into <code>portfolio/</code> as the table shows. Use <code>git mv</code> for the move, because it keeps each file's history attached to the file.</p>
 <table>
 <tr><th>Move this folder</th><th>To this path</th></tr>
 <tr><td><code>evolution-0/</code></td><td><code>portfolio/inventory/</code></td></tr>
@@ -59,10 +59,10 @@
 </table>
 
 <h2>The root README</h2>
-<p>A reader should reach every deliverable in one click from <code>README.md</code>. Say briefly what the portfolio and the project are, link to each required file and folder, and record which AI tools you used and for what (or link to the place in <code>prototype/README.md</code> where you do). If the project changed after the proposal, say what changed and why.</p>
+<p>The root <code>README.md</code> is the first file a reader opens, so it should let them reach every deliverable in one click. Say briefly what the portfolio and the project are, link to each required file and folder, and record which AI tools you used and for what (or link to the place in <code>prototype/README.md</code> where you record them). If the project changed after the proposal, say what changed and why.</p>
 
 <h2>Before the final commit</h2>
-<p>The work itself has to be in the repository; a link to another repository or a cloud drive can sit next to it but does not replace it. Only the file at the required path counts, so move drafts and old versions out of the way or delete them. And check the whole commit history, not just the latest commit, for credentials, API keys, and private data.</p>
+<p>The work itself has to be in the repository; a link to another repository or a cloud drive can sit next to it but does not replace it, because a link may change after the deadline. Only the file at the required path counts, so move drafts and old versions out of the way or delete them. Finally, search the whole commit history for credentials, API keys, and private data, since anything committed at any point remains readable in the history after you delete it from the current files.</p>
 
 <p class="tag">The WTClass page "Your Course Repository: Required Structure" gives the same list of required files.</p>
 <footer>Dr. Jeffry Babb · Paul and Virginia Engler College of Business · West Texas A&amp;M University · CIDM 6395 · Fall 2026</footer>
