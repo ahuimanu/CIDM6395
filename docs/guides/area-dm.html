@@ -14,24 +14,26 @@
 <header>
 <div class="eyebrow">Guide · The four areas · DM</div>
 <h1>Data Mining and Management (DM)</h1>
-<p class="lede">Data Mining and Management makes data trustworthy and usable. In the capstone it is the area that turns raw sources into data the rest of the system can rely on.</p>
+<p class="lede">Data Mining and Management makes data usable and trustworthy. In a capstone built on real data, much of the work is DM work.</p>
 </header>
-<h2>What DM does in a working system</h2>
-<p>DM extracts data from its sources, cleans and transforms it, stores it in a designed structure, and mines it for patterns. Its output is data that the rest of the system can trust: a schema with known meaning, a pipeline that runs again, a table where one record means one thing.</p><p>Most of the real work in a capstone with real data is DM work. Two sources that disagree on a name, a field that changed definition between years, duplicate records, late corrections: each is a DM problem, and each is part of the evidence that the data are real.</p>
+
+<h2>In a working system</h2>
+<p>DM extracts data from its sources, cleans and transforms it, stores it in a designed structure, and mines it for patterns. What it hands on is data the rest of the system can rely on: a schema whose fields mean one thing, and a pipeline that produces the same tables when you run it again.</p>
+<p>Real data bring real DM problems. Two sources disagree about a company's name; a field changes definition between years; records arrive twice, or late, or corrected. In the example project on this site, matching complaint company names to the identifiers in the loan data is the step that takes the most judgment, and it is DM work. Problems like these are evidence that your data are real, which is one reason a pre-cleaned sample dataset makes a weak capstone.</p>
+<p>In <a href="../figures/interaction-space.html">Figure 01</a>, DM meets BA in the data pipeline, SS in the persistence layer, and CN in data protection and governance.</p>
+
 <h2>The courses behind it</h2>
-<p>These courses count toward DM. Each line states, in short, what the course's own objectives say a student can do on completion.</p>
 <table>
-<tr><th>Course</th><th>What the objectives emphasize</th></tr>
-<tr><td>CIDM 6350</td><td>Database design: entity-relationship modeling, relational schemas, normalization, SQL for definition and retrieval, and a database application built for an organization's requirements.</td></tr><tr><td>CIDM 6351</td><td>Extraction, transformation, and loading: data warehouses, lakes, marts, and pipelines, web scraping, and preparing high-quality data for analysis.</td></tr><tr><td>CIDM 6355</td><td>Data mining concepts and algorithms, problem formulation, data preparation, supervised and unsupervised techniques, model evaluation, and responsible use of AI tools.</td></tr>
+<tr><th>Course</th><th>What its objectives emphasize</th></tr>
+<tr><td>CIDM 6350</td><td>Database design: entity-relationship modeling, relational schemas, normalization, SQL for definition and retrieval, and a database application built for an organization's requirements.</td></tr>
+<tr><td>CIDM 6351</td><td>Extraction, transformation, and loading: warehouses, lakes, marts, and pipelines, web scraping, and preparing high-quality data for analysis.</td></tr>
+<tr><td>CIDM 6355</td><td>Data mining concepts and algorithms, problem formulation, data preparation, supervised and unsupervised techniques, model evaluation, and responsible use of AI tools.</td></tr>
 </table>
-<p>CIDM 6355 covers model evaluation and the communication of results, which is also BA work. The boundary between mining and analytics is a matter of emphasis, not a wall. In the same way, CIDM 6303, counted toward SS, teaches SQL and normalization, the core of CIDM 6350.</p>
-<h2>Where DM meets the other areas</h2>
-<p>In <a href="../figures/interaction-space.html">Figure 01</a>, DM overlaps each of the other three areas, and each overlap is a recognizable practice:</p>
-<ul>
-<li><strong>DM with BA: the data pipeline.</strong> Managed data prepared for analysis.</li><li><strong>DM with SS: the persistence layer.</strong> Software built over managed data.</li><li><strong>DM with CN: data protection and governance.</strong> Data that is protected, governed, and kept within its terms of use.</li>
-</ul>
-<h2>DM in the prototype</h2>
-<p>In a prototype, DM is usually the step between the source and the analysis. Its test in the proposal: remove DM, and the analysis runs on data no one has checked. Show DM in the repository as a schema, a pipeline that runs from the README, and a record of the cleaning and matching decisions you made. The data constraints on the <a href="prototype.html">prototype guide</a> are, in large part, DM requirements.</p>
+
+<p>The boundaries here are not sharp. CIDM 6355 covers model evaluation and communicating results, which is BA work as well, and CIDM 6303, counted toward SS, teaches the SQL and normalization at the core of CIDM 6350.</p>
+
+<h2>In your prototype</h2>
+<p>DM usually sits between the source and the analysis. Take it away and the analysis runs on data nobody has checked. In the repository, show a schema, a pipeline that runs from the README, and a record of the cleaning and matching decisions you made. Much of what the <a href="prototype.html">prototype guide</a> asks of your data is DM work.</p>
 
 <p class="tag">Course objectives are summarized from the course syllabi. The area names follow the 2026–2027 Graduate Catalog. Specific details about dates, submission, and scoring are in WTClass.</p>
 <footer>Dr. Jeffry Babb · Paul and Virginia Engler College of Business · West Texas A&amp;M University · CIDM 6395 · Fall 2026</footer>

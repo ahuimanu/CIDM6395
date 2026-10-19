@@ -13,35 +13,33 @@
 <nav class="top"><a href="../">Home</a><a href="../#figures">Figures</a><a href="../#guides" aria-current="page">Guides</a><a href="../#protocol">Protocol</a></nav>
 <header>
 <div class="eyebrow">Guide · The synthesis prototype</div>
-<h1>The Synthesis Prototype</h1>
-<p class="lede">The synthesis prototype is a time-bounded slice of a larger project, built as a minimum viable product (MVP). It runs on real data, from its own instructions. This guide explains the constraints on its scope, its data, and the way it runs.</p>
+<h1>The synthesis prototype</h1>
+<p class="lede">The synthesis prototype is what you build this term: a time-bounded slice of a larger project, built as a minimum viable product. It has to run on real data when I follow your README.</p>
 </header>
-<h2>A sample of the full project</h2>
-<p>As used in this course, the <em>full project</em> is the work one competent person could do in about one year. It needs all four areas. The <em>synthesis prototype</em> is a time-bounded slice of it that you build this term as a minimum viable product. The two are judged by different tests.</p>
-<p>The full project must need all four areas, because a project that one area could finish alone does not test synthesis. The synthesis prototype must fit in the weeks after the proposal, and it must show that the full project can work. For this reason the synthesis prototype is a sample of the full project, not a smaller project. It carries real data along one complete path through the areas the prototype integrates. Each step can do less than the full project would do, but every step runs.</p>
-<p>A student may object, correctly, that a prototype that does a little in every area looks less impressive than one area done well. The capstone does not ask for the most impressive area. It asks for evidence that the areas work together, and one complete path is that evidence. A prototype that builds each component halfway has no path from start to end, so it shows effort but not viability.</p>
 
-<h2>Which areas</h2>
-<p>The prototype integrates SS and at least two of BA, DM, and CN. Each area counted must be necessary: removing it breaks the prototype. <a href="../figures/interaction-space.html">Figure 01</a> shows where such a prototype sits, in one of the three-way overlaps that include SS, or at the center. <a href="../figures/three-views.html">Figure 02</a> shows one example drawn three ways.</p>
+<h2>The full project and the prototype</h2>
+<p>Your proposal describes two things. The <em>full project</em> is what one competent person could build in about a year of full-time work. It needs all four areas, because a project that one area could finish alone does not test synthesis. The <em>synthesis prototype</em> is the part of it you can finish in the weeks after your proposal is approved.</p>
+<p>Treat the prototype as a sample of the full project rather than a smaller project of its own. It carries real data along one complete path, from the source to something a user sees and acts on, through SS and at least two of BA, DM, and CN. Each step can be thin. Every step has to run. Two shapes fail here: one area built well with the others stubbed, and every component built halfway. Neither leaves a path I can follow from the data to the result, and that path is the evidence that the areas work together.</p>
 
-<h2>Four conditions on the data</h2>
-<p>The data must meet four conditions. Each one protects a different part of the argument the prototype makes.</p>
-<ol>
-<li><strong>Relevance.</strong> The data come from the domain of the problem, and each field you use traces to a decision or an operation in that domain. A dataset chosen because it was easy to download, with a problem invented to fit it, fails. So does a toy problem whose answer matters to no one.</li>
-<li><strong>Accountability.</strong> Someone outside the course answers for the original data: an agency, a firm, a research group, or your employer with written permission. Your README records who produced the data, the terms of use, the date you got it, and each change you made. If no one answers for the data, no one can check a claim made from it.</li>
-<li><strong>Availability.</strong> You can get the data now, in the volume the prototype needs, and a reviewer can get the same data again. The repository holds the data, or a script that retrieves it.</li>
-<li><strong>Quality.</strong> The data have transactional variety: many records of more than one kind, made by real activity over time, with the defects real activity makes. The data need not be clean, because cleaning is part of the DM work. One tidy table of a few hundred rows gives DM nothing to do.</li>
-</ol>
+<h2>Which areas count</h2>
+<p>An area counts when the prototype breaks without it. SS is required, since the prototype has to run and SS is what runs. Add at least two of the other three. <a href="../figures/interaction-space.html">Figure 01</a> shows where a prototype like that sits; <a href="../figures/three-views.html">Figure 02</a> follows one example through three views.</p>
 
-<h2>Why not Kaggle</h2>
-<p>Sample datasets on Kaggle, the UCI repository, and in textbooks are good material for learning a technique. Most are poor material for a capstone, for five reasons. Someone else framed the problem. Someone else did the DM work. The data are a frozen snapshot, so SS has nothing to ingest and CN has nothing to protect. The provenance is often a copy of an uncited source. And thousands of public notebooks use the same file, so a reviewer cannot tell which decisions are yours.</p>
-<p>Government and transactional datasets usually meet all four conditions. An agency answers for the data and publishes a data dictionary, and an event-level record (a flight, a loan application, a complaint, a payment) gives every area real work. Even an aggregate series from the Federal Reserve or BEA is better evidence than most Kaggle files, because an agency answers for every value. Use such a series as context, joined to an event source. The WTClass page "Data Sources for the Capstone" lists 40 checked sources.</p>
-<p>Synthetic data is admissible only when it is generated from a documented real reference, the generator is in the repository, and it supplements real data or replaces data you show you cannot use. Synthetic data made from nothing shows only the patterns the generator put in.</p>
+<h2>Data</h2>
+<p>I hold the data to four conditions.</p>
+<p>First, relevance. The data come from the domain of your problem, and every field you use connects to a decision or an operation there. A dataset picked because it was easy to download, with a problem invented afterward to fit it, does not qualify.</p>
+<p>Second, accountability. Someone outside the course answers for the original data: an agency, a firm, a research group, or your employer with written permission. Your README carries a provenance table with who produced the data, the terms of use, the date you got it, and each change you made to it. If nobody answers for the data, nobody can check a claim you make from it.</p>
+<p>Third, availability. I have to be able to get the same data you used, so commit the data or a script that retrieves it.</p>
+<p>Fourth, quality, which here means transactional variety: many records, of more than one kind, produced by real activity over time and carrying the gaps, duplicates, and late corrections real activity leaves. Dirty data is fine, because cleaning it is DM work. A tidy table of a few hundred rows is not fine, because it leaves DM with nothing to do.</p>
+
+<h2>Kaggle and other sample datasets</h2>
+<p>Kaggle, the UCI repository, and the datasets that come with textbooks are good for learning a technique and poor for a capstone. Someone else has already framed the problem and done the cleaning. The file is a frozen snapshot, so SS has nothing to ingest and CN has nothing to protect. The source is often an uncited copy of someone else's data. And thousands of public notebooks use the same file, which means I cannot tell which decisions are yours.</p>
+<p>Government and transactional data usually clear all four conditions. An agency stands behind the data and publishes a data dictionary, and event-level records (flights, loan applications, complaints, payments) give every area real work. Even an aggregate series from the Federal Reserve or BEA is better evidence than most Kaggle files, since an agency answers for every number in it; use a series like that as context, joined to an event source. The WTClass page "Data Sources for the Capstone" lists 40 sources I have checked.</p>
+<p>You may use synthetic data if you generate it from a documented real reference, commit the generator, and use the result only to supplement real data or to stand in for data you can show you cannot get. Synthetic data invented from scratch only tells you what you told the generator.</p>
 
 <h2>How it runs</h2>
-<p>The prototype is written in Python, with one of three interfaces: a command-line program, a web application such as Streamlit, or a Jupyter notebook. A notebook is acceptable as the interface but not as the whole system. The data layer, the pipeline, and the controls exist outside it, and the notebook calls them.</p>
-<p>A prototype built only in Excel is not accepted, and Excel macros are discouraged. Excel does not run on Linux, a macro that works on Windows can fail on a Mac, and Git stores a macro workbook as a binary file that a reviewer cannot compare between commits. Any tool other than Python needs my approval, and I approve only tools that run on Windows, macOS, and Linux.</p>
-<p>The prototype README states the Python version, the dependencies file, how to get the data, and the command that starts the prototype. At review, I clone the repository and follow the README from the first step. In the debrief I may ask you to demonstrate the prototype live for at least five minutes.</p>
+<p>Write the prototype in Python. The interface can be a command-line program, a web app (Streamlit, for example), or a Jupyter notebook. A notebook should call the data layer, the pipeline, and the controls, not contain them.</p>
+<p>I do not accept a prototype built only in Excel, and I discourage macros. Excel does not run on Linux, a macro written on Windows often breaks on a Mac, and Git cannot show me what changed inside a macro workbook. Any tool other than Python needs my approval in the proposal cycle, and I approve only tools that run on Windows, macOS, and Linux.</p>
+<p>At review I clone your repository into an empty folder and follow <code>prototype/README.md</code> from the top. When a step needs something only you have, such as a personal API key, I note it and ask you to run the prototype for me in the debrief, for at least five minutes.</p>
 
 <h2>Files in your repository</h2>
 <p>These files stay in your course repository. Use these paths and names exactly. The <a href="repository.html">repository guide</a> shows the whole structure.</p>

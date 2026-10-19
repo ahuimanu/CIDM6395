@@ -13,14 +13,12 @@
 <nav class="top"><a href="../">Home</a><a href="../#figures">Figures</a><a href="../#guides" aria-current="page">Guides</a><a href="../#protocol">Protocol</a></nav>
 <header>
 <div class="eyebrow">Guide · Your repository</div>
-<h1>Your Repository</h1>
-<p class="lede">Every capstone deliverable is a file you leave in your course repository. This guide shows the structure, which folder holds each deliverable, and who writes each file.</p>
+<h1>Your repository</h1>
+<p class="lede">Everything you hand in for the capstone is a file in your private repository in the course organization, at a path set below. I evaluate the repository as it stands at the commit made by the deadline.</p>
 </header>
-<h2>One repository, two jobs</h2>
-<p>Your private repository in the course GitHub organization is where you submit every piece of the capstone, and it is the portfolio you show after the course ends. Every deliverable is a file in it. Nothing outside it counts unless the repository links to it clearly, and I evaluate it at the commit that exists at the deadline.</p>
 
-<h2>The structure</h2>
-<p>Use these paths and names exactly, including capitalization. Where the tree gives two names, use one of them. Exact names mean every repository can be checked the same way: I open each required path in turn. A file at a different path or under a different name is misplaced, and it costs organization points even when I find it. A file I cannot find is missing.</p>
+<h2>The required files</h2>
+<p>Use these paths and names exactly, capitalization included. Where the tree offers two names, pick one. Because every repository has the same layout, I can check each one the same way, opening each required path in turn. A file at another path or under another name is misplaced and costs organization points even when I find it. A file I cannot find is missing.</p>
 <pre><code>your-repository/
 ├── README.md                     the front door: what is here and where
 ├── portfolio/
@@ -47,9 +45,10 @@
     ├── evolution-N.md
     ├── proposal.md
     └── final-project.md</code></pre>
+<p>Everything outside <code>feedback/</code> is yours to write. The <code>feedback/</code> folder holds only my files; leave them where they are and do not edit them. Each deliverable's guide explains what goes in its files: the <a href="portfolio.html">portfolio and bio</a>, the <a href="proposal.html">proposal</a>, the <a href="prototype.html">synthesis prototype</a>, the <a href="paper.html">paper</a>, and the <a href="presentation.html">presentation</a>.</p>
 
 <h2>Moving the evolution folders</h2>
-<p>The evolution assignments had you commit each appraisal to a top-level <code>evolution-N</code> folder. By the final commit, move them with <code>git mv</code>, so the history of each file moves with it:</p>
+<p>You committed each evolution to a top-level <code>evolution-N</code> folder. Before the final commit, move them into <code>portfolio/</code> with <code>git mv</code>, which carries each file's history along:</p>
 <table>
 <tr><th>Move this folder</th><th>To this path</th></tr>
 <tr><td><code>evolution-0/</code></td><td><code>portfolio/inventory/</code></td></tr>
@@ -59,28 +58,11 @@
 <tr><td><code>evolution-4/</code></td><td><code>portfolio/CN/</code></td></tr>
 </table>
 
-<h2>Who writes what</h2>
-<table>
-<tr><th>Location</th><th>Written by</th><th>Deliverable</th><th>Guide</th></tr>
-<tr><td><code>README.md</code></td><td>Student</td><td>The front door to every deliverable</td><td>This page</td></tr>
-<tr><td><code>portfolio/</code></td><td>Student</td><td>Portfolio and bio</td><td><a href="portfolio.html">Portfolio</a></td></tr>
-<tr><td><code>proposal/</code></td><td>Student</td><td>Proposal</td><td><a href="proposal.html">Proposal</a></td></tr>
-<tr><td><code>prototype/</code></td><td>Student</td><td>Synthesis prototype</td><td><a href="prototype.html">Prototype</a></td></tr>
-<tr><td><code>deliverables/</code> (paper)</td><td>Student</td><td>Synthesis paper</td><td><a href="paper.html">Paper</a></td></tr>
-<tr><td><code>deliverables/</code> (slides, video)</td><td>Student</td><td>Presentation</td><td><a href="presentation.html">Presentation</a></td></tr>
-<tr><td><code>feedback/</code></td><td>Professor</td><td>Feedback on each evaluation</td><td><a href="../protocol/evolution-feedback.html">Protocols</a></td></tr>
-</table>
-<p>The <code>feedback/</code> folder holds only my files. Do not edit, move, or delete them. Everything else in the repository is yours.</p>
-
 <h2>The root README</h2>
-<p>The root README is the front door. A reader should reach every deliverable in one click from it. It states what the portfolio contains, links to <code>portfolio/BIO.md</code> and the four area folders, and gives the location of the proposal, the prototype, the paper, the slides, and the video. It also records which AI tools you used and for what (or points to the prototype README for this), and, if the project changed after the proposal, what changed and why.</p>
+<p>A reader should reach every deliverable in one click from <code>README.md</code>. Say briefly what the portfolio and the project are, link to each required file and folder, and record which AI tools you used and for what (or link to the place in <code>prototype/README.md</code> where you do). If the project changed after the proposal, say what changed and why.</p>
 
-<h2>Three rules</h2>
-<ol>
-<li><strong>Work is a file, not a link.</strong> A link to another repository or a cloud drive can supplement the work. It does not replace it.</li>
-<li><strong>One final version.</strong> Only the file at the required path counts. Move drafts and earlier versions out of the way, or delete them.</li>
-<li><strong>No secrets.</strong> No credentials, API keys, or private data anywhere in the commit history.</li>
-</ol>
+<h2>Before the final commit</h2>
+<p>The work itself has to be in the repository; a link to another repository or a cloud drive can sit next to it but does not replace it. Only the file at the required path counts, so move drafts and old versions out of the way or delete them. And check the whole commit history, not just the latest commit, for credentials, API keys, and private data.</p>
 
 <p class="tag">The WTClass page "Your Course Repository: Required Structure" gives the same list of required files.</p>
 <footer>Dr. Jeffry Babb · Paul and Virginia Engler College of Business · West Texas A&amp;M University · CIDM 6395 · Fall 2026</footer>
