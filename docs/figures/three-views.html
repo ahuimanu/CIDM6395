@@ -20,7 +20,7 @@
 <header>
 <div class="eyebrow">Figure 02 · Three views of one project</div>
 <h1>Three Views of One Project</h1>
-<p class="lede">One project drawn three ways. The chain shows the order in which the areas act, the stack shows what depends on what, and the hub shows what each area contributes to the decision at the center.</p>
+<p class="lede">This figure draws one project in three ways. The chain shows the order in which the areas act, the stack shows which parts depend on which, and the hub shows what each area contributes to the decision the project supports.</p>
 </header>
 <div class="figwrap">
 <div class="scroller">
@@ -120,15 +120,15 @@
 </div>
 </div>
 <h2>Reading the figure</h2>
-<p>The three views describe the same design, so you do not choose among them. Each one hides something the others show. The chain makes it easy to miss that CN acts at every step, the stack hides the order in which the data arrive, and the hub hides how the areas connect to one another.</p>
-<p>This example integrates all four areas, though SS with any two of the others would meet the rule. SS appears twice in the chain because software both loads the data and delivers the result. It is required because the prototype has to run, not because it belongs at the center; in the hub, the decision is at the center.</p>
-<p>Your proposal drawing uses the chain, since the proposal states the order in which the areas act. <a href="minimum-demo.html">Figure 03</a> shows how to mark the synthesis prototype on it. The stack and the hub are more useful in the paper.</p>
+<p>The three views describe the same design, so you use all of them rather than choosing one. Each leaves out something the others make visible: the chain makes it easy to miss that CN acts at every step, the stack does not show the order in which the data arrive, and the hub does not show how the areas connect to one another.</p>
+<p>This example integrates all four areas, although SS with any two of the others would meet the rule. SS appears twice in the chain because software both loads the data and delivers the result. I require SS because the prototype has to run, and the hub shows that the requirement does not make SS the center of the design; the center of this project is the examiner's decision.</p>
+<p>Your proposal drawing uses the chain, since the proposal states the order in which the areas act, and <a href="minimum-demo.html">Figure 03</a> shows how to mark the synthesis prototype on it. The stack and the hub are more useful in the paper.</p>
 <footer>Dr. Jeffry Babb · Paul and Virginia Engler College of Business · West Texas A&amp;M University · CIDM 6395 · Fall 2026</footer>
 </div>
 <script>
 const views={
- chain:{k:"Chain: the order of the work",p:"Read the chain left to right. SS loads complaints from the CFPB API each day and the HMDA loan file each year. DM stores both and matches each complaint's company name to a lender identifier. BA computes complaints per 1,000 loans and flags each lender whose rate differs from the state rate by more than chance. SS shows the result to the examiner. CN does not sit at one point in the chain. It acts along the whole flow."},
- stack:{k:"Stack: what depends on what",p:"Read the stack top to bottom. The examiner uses the application, which shows what the analysis computes from the tables the data layer stores, and all of it runs under the controls at the bottom. When a layer fails, everything above it fails with it."},
+ chain:{k:"Chain: the order of the work",p:"Read the chain left to right. SS loads complaints from the CFPB API each day and the HMDA loan file each year. DM stores both and matches each complaint's company name to a lender identifier. BA computes complaints per 1,000 loans and flags each lender whose rate differs from the state rate by more than chance. SS shows the result to the examiner. CN acts along the whole flow rather than at one point in it."},
+ stack:{k:"Stack: what depends on what",p:"Read the stack top to bottom. The examiner uses the application, which shows what the analysis computes from the tables the data layer stores, and all of it runs under the controls at the bottom. A failure in one layer therefore stops every layer above it."},
  hub:{k:"Hub: what each area contributes",p:"The hub puts the examiner's decision at the center, with each area supplying part of the answer. The two diagonal overlaps are not labeled: in this project the persistence layer (SS with DM) holds the complaint and loan tables, and security analytics (BA with CN) does not occur, since nothing here analyzes security data."}
 };
 const tabs=[...document.querySelectorAll(".views button")],capk=document.getElementById("capk"),capp=document.getElementById("capp");
